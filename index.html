@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sachin Singh Lodhi</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,800&family=Roboto&display=swap"
+        rel="stylesheet">
+
+    <!-- external css -->
+    <link rel="stylesheet" href="other_files/styles.css">
+    <!--font-awesome-css-->
+    <script src="https://kit.fontawesome.com/f6f7704e20.js"></script>
+
+    <style>
+        :root {
+            --orange: #0096c7;
+            --deeporange: #023e8a;
+        }
+
+        .hobbydiv {
+            display: grid;
+            place-items: center;
+            font-size: 1.5rem;
+        }
+
+        body {
+            font-family: 'Roboto', 'sans-serif' !important;
+            font-size: 18px;
+        }
+
+        #m-bar {
+            height: 100%;
+            width: 100%;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Montserrat', 'sans-serif' !important;
+        }
+
+        a,
+        a:hover {
+            text-decoration: none !important;
+        }
+
+        a.side-nav-btn:hover {
+            text-decoration: none;
+            background-color: var(--orange);
+            color: white;
+        }
+
+        .hobby-checkbox {
+            margin-bottom: 2rem;
+        }
+
+        #hobby-description {
+            background-color: #c7c7c7;
+            padding: 2rem;
+        }
+
+
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 2;
+        }
+
+        .mobile-body {}
+
+        table {
+            overflow-x: scroll;
+            height: 100%;
+            display: block;
+        }
+
+        /*mobile & tablet*/
+        @media only screen and (max-width: 1000px) {
+            .desktop {
+                display: none;
+            }
+
+            .mobile {
+                display: block;
+            }
+
+
+            #side-nav {
+                display: none;
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: 2;
+                color: white;
+            }
+
+            #mypic {
+                transition: transform 0.3s;
+            }
+
+            #mypic:hover {
+                transform: scale(1.05);
+            }
+
+            .side-nav-btn {
+                display: grid;
+                place-items: center;
+                color: white;
+            }
+        }
+
+        /*desktop*/
+        @media only screen and (min-width: 1000px) {
+            .desktop {
+                display: block;
+            }
+
+            .mobile {
+                display: none;
+            }
+
+            #side-nav {
+                display: none;
+            }
+
+            .side-nav-btn {
+                display: grid;
+                place-items: center;
+                color: white;
+            }
+
+            #mypic {
+                transition: transform 0.3s;
+            }
+
+            #mypic:hover {
+                transform: scale(1.05);
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="desktop">
+        <div class="d-flex mb-3">
+            <div class="p-2" style="width: 16%; position: fixed; top: 0; bottom: 0; background: #003049;">
+                <div class="d-flex flex-column h-100">
+                    <div class="side-nav-btn" style="background-color: var(--deeporange);">
+                        <h2 class="pt-4 mb-4">Sachin Lodhi</h2>
+                    </div>
+                    <a class="side-nav-btn flex-fill" href="#home">
+                        <div>
+                            <h3>Home</h3>
+                        </div>
+                    </a>
+                    <a class="side-nav-btn flex-fill" href="#project">
+                        <div>
+                            <h3>Project</h3>
+                        </div>
+                    </a>
+                    <a class="side-nav-btn flex-fill" href="#hobby">
+                        <div>
+                            <h3>Hobby</h3>
+                        </div>
+                    </a>
+                    <a class="side-nav-btn flex-fill" href="#education">
+                        <div>
+                            <h3>Education</h3>
+                        </div>
+                    </a>
+                    <a class="side-nav-btn flex-fill" href="#register">
+                        <div>
+                            <h3>Register</h3>
+                        </div>
+                    </a>
+                    <a class="flex-fill side-nav-btn" href="#contact">
+                        <div>
+                            <h3>Contact</h3>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+            <div class="flex-grow-1">
+
+                <!-- Home start -->
+                <div id="home" style="margin-left: 16%; min-height: 100vh; background-color:white; padding: 4rem;">
+                    <h1 class="container text-white mb-4 display-3" style="color: var(--deeporange) !important">About me
+                    </h1>
+                    <div id="home-image" class="container card shadow"
+                        style="padding: 2rem; border-radius: 1rem !important; border: 1px solid var(--deeporange) !important;">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div>
+                                    <p style="font-size:21px;">
+                                        <br>
+                                        Hello,
+                                        <br><br>
+                                        I am a Fullstack Developer at MathWorks India Pvt Ltd, where I develop and maintain both frontend and backend components of MathWorks Online Products.
+                                        With a strong track record of enhancing system performance, improving user experience, and ensuring the scalability and security of web applications, I bring a wealth of expertise to my role. 
+                                        <br><br>
+                                        Previously, I worked as a Backend Developer at Crio.do, contributing to real-time projects and gaining experience in both backend and frontend development. 
+                                        <br><br>
+                                        I hold a Master's degree in Computer Science from the prestigious IIT Bombay.
+                                        <br><br>
+                                    </p>
+
+                                    <p style="color: black; font-size: 20px;"><i><b>- Sachin Singh Lodhi</b></i></p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6" style="display: grid;place-items: center;">
+                                <img id="mypic" class="img-fluid" src="images_icons/mypic.jpeg" alt="my_pic"
+                                    style="border-radius: 1rem !important;">
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+                <!-- Home end -->
+
+                <!-- Project start -->
+                <div id="project" class="" style="margin-left: 16%; min-height: 100vh; padding: 4rem;">
+                    <h1 class="container text-white mb-4 display-3" style="color: var(--deeporange) !important">Projects
+                    </h1>
+                    <div class="container card shadow"
+                        style="padding: 2rem; border-radius: 1rem !important; border: 1px solid var(--deeporange) !important;">
+                        <ol type="I" class="container m-4 p-4">
+                            <li class="h3">Doc Tooling | 
+                                <span>
+                                    <a href="https://www.mathworks.com/help/" target="_blank">MathWorks Documentation Website</a>
+                                </span>
+                            </li>
+                            <ul class="m-3 p-3" style="font-size:18px;">
+                                <li>Spearheaded the initiative to replace the legacy EQUUS system with the new GO Doc Runner project, ad-
+                                    dressing security concerns and improving web content deployment.
+                                </li>
+                                <li>
+                                    Developed a proof of concept for the GO version of the search page, ensuring compatibility across multiple
+                                    documentation releases from R2019b to R2024b.
+                                </li>
+                                <li>Ensured system scalability and performance by using clean architecture and MVC design pattern to clearly
+                                    separate concerns, allowing independent development, testing, and maintenance of each component.
+                                </li>
+                                <li>Utilized the MITO framework, Mux, Pongo2, and Adobe Experience Manager library to effectively combine
+                                    templates with data, rendering dynamic HTML pages and significantly reducing development time.
+                                </li>
+                                <li>Won the best enhancement award for my prototype in Hack Day 2023 organised within MathWorks
+                                </li>
+                                <li><b>Used - Gin, Golang, AEMs, Git, MongoDB, Bootstrap, MVC Model</b>
+                                </li>
+                            </ul>
+                            <hr>
+                            <li class="h3">MATLAB Online | 
+                                <span>
+                                    <a href="https://www.mathworks.com/products/matlab-online.html" target="_blank">MathWorks Online</a>
+                                </span>
+                            </li>
+                            <ul class="m-3 p-3" style="font-size:18px;">
+                                <li>
+                                    Developed a robust communications system facilitating seamless interaction between diverse contexts via channels employing publisher-subscriber architecture, strategically applying the system design principles.
+                                </li>
+                                <li>
+                                    Created resize and drag utilities from scratch to meet company standard for integration in numerous widget in upcoming MATLAB Online release, also lowering the memory consumption by 12% with respect to the previous.
+                                </li>
+                                <li>
+                                    Integrated filtering, websockets and replaced the old state management system with redux to manage the state of the complete application resulting in 25% increase in performance. 
+                                </li>
+                                <li>
+                                    Also proficiently crafted multiple pages within the application to optimize data visualization and enhance user experience, leveraging React.js, HTML, and Tailwind CSS.
+                                </li>
+                                <li><b>Used - MongoDB, Express.js, React.js, Node.js, Tailwind CSS</b>
+                                </li>
+                            </ul>
+                            <hr>
+
+                            <li class="h3">Metfolio | 
+                                <span>
+                                    <a href="https://www.metfolio.com/" target="_blank">Metfolio</a>
+                                </span>
+                            </li>
+                            <ul class="m-3 p-3" style="font-size:18px;">
+                                <li> Created a modular backend function for the historical and live gold price data using Node and Express. 
+                                </li>
+                                <li>
+                                    Increased the user engagement on the mobile application by 15%
+                                </li>
+                                <li>
+                                    Integrated new UI design, Stripe payment system, Apple Pay and Google Pay for Gold payment and Analytics SDKs in the Metfolio’s application. 
+                                </li>
+                                <li>
+                                    Also developed the frontend of the company’s admin panel from scratch.</li>
+                                <li>
+                                    <b>Used - HTML, Bootstrap, Vanilla Javascript, Git</b>
+                                </li>
+                            </ul>
+                        </ol>
+                    </div>
+
+                </div>
+                <!-- Project end -->
+
+                <!-- Hobby start -->
+                <div id="hobby" class="" style="margin-left: 16%; min-height: 100vh; padding: 4rem;">
+                    <h1 class="container text-white mb-4 display-3" style="color: var(--deeporange) !important">Hobbies
+                    </h1>
+                    <div class="container card shadow row mx-auto"
+                        style="padding: 2rem; border-radius: 1rem !important; border: 1px solid var(--deeporange) !important;">
+                        <div class=" m-1 p-2 par ">
+
+                            <div class="">
+                                <form onsubmit="javascript:formSubmit()" method="" action="">
+                                    <div class="row">
+                                        <div class="hobbydiv card col-sm-4"><img class="row"
+                                                style="height:250px;width:250px;" src="images_icons/tenor.gif" alt="">
+                                            <input class=" hobby-checkbox" type="checkbox" name="hobby" id="songs"
+                                                value="songs"> <label for="hobby_songs">Listening Songs</label>
+                                        </div>
+                                        <div class="hobbydiv card col-sm-4 b"><img class="row"
+                                                style="height:250px;width:250px;" src="images_icons/fpsgames.gif"
+                                                alt="">
+                                            <input class=" hobby-checkbox" type="checkbox" name="hobby" id="games"
+                                                value="games"> <label for="hobby_games">Playing FPS
+                                                Games</label>
+                                        </div>
+                                        <div class="hobbydiv card col-sm-4"><img class="row"
+                                                style="height:250px;width:250px;" src="images_icons/series.gif" alt="">
+                                            <input class=" hobby-checkbox" type="checkbox" name="hobby" id="series"
+                                                value="series"> <label for="hobby_series">Wathcing TV
+                                                Series</label>
+                                        </div>
+                                    </div>
+                                    <div class="mx-auto p-2 row">
+                                        <input type="submit" id="submit" name="submit" value="Submit"
+                                            class="mx-auto btn btn-primary"
+                                            style="background-color: var(--deeporange) !important; padding: 8px 32px !important;" />
+                                    </div>
+                                </form>
+                            </div>
+
+
+                        </div>
+                        <hr>
+                        <p id="hobby-description"></p>
+                    </div>
+
+                </div>
+                <!-- Hobby end -->
+
+                <!-- Education start -->
+                <div id="education" class="" style="margin-left: 16%; min-height: 100vh; padding: 4rem;">
+                    <h1 class="container text-white mb-4 display-3" style="color: var(--deeporange) !important">
+                        Education
+                    </h1>
+                    <div class="container card shadow"
+                        style="padding: 2rem; font-size:2rem;border-radius: 1rem !important; border: 1px solid var(--deeporange) !important;">
+                        <div class="row  mx-auto">
+                            <table class="stylishtable" style="border-radius: 1rem !important;">
+                                <thead>
+                                    <tr>
+                                        <th>Degree</th>
+                                        <th>Stream</th>
+                                        <th>School/University</th>
+                                        <th>Y.O.P</th>
+                                        <th>Percentage</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="active-row">
+                                        <td>M.Tech</td>
+                                        <td>Computer Science</td>
+                                        <td>Indian Institute of Technology Bombay</td>
+                                        <td>2023</td>
+                                        <td>94.7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>B.Tech</td>
+                                        <td>Information Technology</td>
+                                        <td>R.G.P.V</td>
+                                        <td>2021</td>
+                                        <td>84.9</td>
+                                    </tr>
+                                    <tr class="active-row">
+                                        <td>12th</td>
+                                        <td>PCM</td>
+                                        <td>Hind Convent School</td>
+                                        <td>2017</td>
+                                        <td>89.8</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10th</td>
+                                        <td>-</td>
+                                        <td>D.A.V Public School</td>
+                                        <td>2015</td>
+                                        <td>95</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Education end -->
+
+                <!-- Register start -->
+                <div id="register" class="" style="margin-left: 16%; min-height: 100vh; padding: 4rem;">
+                    <h1 class="container text-white mb-4 display-3" style="color: var(--deeporange) !important">
+                        Register
+                    </h1>
+                    <div class="container card shadow"
+                        style="height:100vh;padding: 1rem; border-radius: 1rem !important; border: 1px solid var(--deeporange) !important;">
+                        <div class="col ">
+                            <div class="center">
+                                <embed type="text/html" class="mx-auto"
+                                    src="https://docs.google.com/forms/d/e/1FAIpQLSeVZx6eKhT2ZLmgETPkPvGrtqt-YSR6avUGnRvAFMUq86wBEA/viewform?vc=0&c=0&w=1&flr=0"
+                                    style="height:96vh;width:90vh;display: grid;
+                                                    place-items: center;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Register end -->
+                <!--Footer start-->
+                <div id="contact" class=""
+                    style="margin-left: 16%; margin-bottom: -12px; padding: 4rem;background: #003049 !important">
+                    <h3 class="container text-white display-3">
+                        Contact Me
+                    </h3>
+                    <div class="container">
+                        <div class="d-flex h-100">
+                            <a class="side-nav-btn flex-fill" target="_blank"
+                                href="https://www.linkedin.com/in/sachin-singh-lodhi">
+                                <div class="p-2">
+                                    <i class="col-sm-3 fa fa-linkedin-square text-white"
+                                        style="font-size:28px;margin-top:2rem !important;" aria-hidden="true"></i>
+                                    <h3 class="col-sm-9">LinkedIn</h3>
+                                </div>
+                            </a>
+                            <a class="side-nav-btn flex-fill" target="_blank"
+                                href="https://www.instagram.com/_sachin__singh_/">
+                                <div class="p-2">
+                                    <i class="col-sm-3 fa fa-instagram text-white"
+                                        style="font-size:28px;margin-top:2rem !important;" aria-hidden="true"></i>
+                                    <h3 class="col-sm-9">Instagram</h3>
+                                </div>
+                            </a>
+                            <a class="side-nav-btn flex-fill" target="_blank"
+                                href="https://www.facebook.com/profile.php?id=100006128059377">
+                                <div class="p-2">
+                                    <i class="col-sm-3 fa fa-facebook-square text-white"
+                                        style="font-size:28px;margin-top:2rem !important;" aria-hidden="true"></i>
+                                    <h3 class="col-sm-9">Facebook</h3>
+                                </div>
+                            </a>
+                            
+
+                        </div>
+                    </div>
+                </div>
+                <!--Footer end -->
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile">
+        <div class="d-flex bg-dark sticky" style="padding: 1rem 3rem;">
+            <div id="m-bar" class="row d-flex">
+                <div class="text-white"><a class="col-sm-2" id="menu" href="javascript:openSideNavigation();">
+                        <span class="glyphicon glyphicon-align-justify text-white"
+                            style="padding: 1.5rem !important;"></span>
+                    </a></div>
+                <div class="flex-fill text-white">
+                    <p style="font-family: Montserrat;font-size:3rem;" class="col-sm-10 text-white">Sachin Singh Lodhi
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div id="side-nav" class="bg-dark">
+            <div class="d-flex flex-column h-100">
+                <div class="d-flex text-white">
+                    <div class="flex-fill"></div>
+                    <div class="p-4">
+                        <a style="text-decoration: none; color: white; font-size: 20px;"
+                            href="javascript:closeSideNavigation();">
+                            <span class="glyphicon glyphicon-remove text-white"
+                                style="padding: 2rem !important;"></span>
+                        </a>
+                    </div>
+                </div>
+
+                <a class="flex-fill side-nav-btn" href="#m-home" onclick="javascript:closeSideNavigation();">
+                    <div>
+                        <h1>Home</h1>
+                    </div>
+                </a>
+                <a class="flex-fill side-nav-btn" href="#m-project" onclick="javascript:closeSideNavigation();">
+                    <div>
+                        <h1>Project</h1>
+                    </div>
+                </a>
+                <a class="flex-fill side-nav-btn" href="#m-hobby" onclick="javascript:closeSideNavigation();">
+                    <div>
+                        <h1>Hobby</h1>
+                    </div>
+                </a>
+                <a class="flex-fill side-nav-btn" href="#m-education" onclick="javascript:closeSideNavigation();">
+                    <div>
+                        <h1>Education</h1>
+                    </div>
+                </a>
+                <a class="flex-fill side-nav-btn" href="#m-register" onclick="javascript:closeSideNavigation();">
+                    <div>
+                        <h1>Register</h1>
+                    </div>
+                </a>
+                <a class="flex-fill side-nav-btn" href="#m-contact" onclick="javascript:closeSideNavigation();">
+                    <div>
+                        <h1>Contact</h1>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="mobile-body p-4">
+            <!-- Home start -->
+            <div id="m-home">
+                <div style="height:50px;"></div>
+
+                <div style="margin-bottom: 4rem;">
+                    <h1 class="text-white mb-4 display-3" style="color: var(--deeporange) !important">About me
+                    </h1>
+                    <p style="font-size:21px;">Hello everyone. First of all I would like to
+                        congratulate all of you for making it to IITB. I am Sachin Singh Lodhi. I live
+                        in
+                        Bhopal, M.P.. I did my
+                        Bachelor of
+                        Technology from UIT-RGPV
+                        college Bhopal, with specialization in Information Technology branch. I am a
+                        2021
+                        passout student.
+                        <br>
+                        <br>
+                        I am very excited to be a part of IITB Family. I had always
+                        dreamt about studying at
+                        IIT. Now after getting admission it seems like my dream came true.
+                        Now the only thing I want is to learn as much as possible and to make beautiful
+                        memories
+                        . I can't wait to visit the IITB campus and meet
+                        all
+                        of you folks. I think
+                        that every student wishes the same. At IITB I want to explore
+                        everything. Whether it is dancing, singing, sports, drama, etc I want to take
+                        part in
+                        all sorts of
+                        activities.
+                        <br>
+                    </p>
+
+                    <p style="color: black; font-size: 20px;"><i><b>- Sachin Singh Lodhi</b></i></p>
+                </div>
+
+                <div id="m-home-image">
+                    <img id="mypic" class="img-fluid" src="images_icons/mypic.jpeg" alt="my_pic"
+                        style="border-radius: 1rem !important;">
+                </div>
+
+                <div>
+                    <div id="m-home-video" class="container card shadow" style="padding: 2rem; border-radius: 1rem !important; border: 1px solid var(--deeporange)
+                        !important;display:none;">
+                        <div class="row">
+                            <video class="col-sm-10 mx-auto rounded" controls>
+                                <source src="video.mp4" type="video/mp4">
+                                Your browser does not support HTML video.
+                            </video>
+                        </div>
+                    </div>
+
+                    <div class="row mx-auto container my-5 p-2" style="border-radius: 1rem !important;">
+                        <div style="margin: auto;">
+                            <a href="javascript:mShowImage()"
+                                class="bottombtn mbtn text-center rounded col-sm-5 p-2">Image</a>
+                            <a href="javascript:mShowVideo()"
+                                class="text-center mbtn bottombtn rounded col-sm-5 p-2 ">Video</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Home end -->
+
+            <!-- Project start -->
+            <div id="m-project" style="height:50px;"></div>
+            <div style="margin-top: 4rem;">
+
+                <h1 class="text-white mb-4 display-3" style="color: var(--deeporange) !important">Projects
+                </h1>
+
+                <div class="container card shadow"
+                    style="padding: 2rem; border-radius: 1rem !important; border: 1px solid var(--deeporange) !important;">
+                    <ol type="I" class="container m-3 p-3">
+                        <li class="h3">Online Quiz Application (Using Java)</li>
+                        <ul class="m-3 p-3" style="font-size:16px;">
+                            <li>This project aims to design a web based application to conduct online exams.
+                            </li>
+                            <li>Implemented remote proctoring using Webcam.
+                            </li>
+                            <li><b>Used - Java E.E., JDBC, Webcam Library, MVC Model</b>
+                            </li>
+                        </ul>
+                        <hr>
+                        <li class="h3">Brew-Crew Application(Using Flutter)</li>
+                        <ul class="m-3 p-3" style="font-size:16px;">
+                            <li>This application is ideal for office purposes when our colleagues want to order some
+                                drinks during break.
+                            </li>
+                            <li>Flutter is Google's UI Toolkit that enables us to design cross-platform
+                                applications.
+                            </li>
+                            <li><b>Used - Flutter, Dart, Firebase, Git</b>
+                            </li>
+                        </ul>
+                        <hr>
+
+                        <li class="h3">QEats (Using Clarify AI Library)</li>
+                        <ul class="m-3 p-3" style="font-size:16px;">
+                            <li>This project uses the Clarify API to get predictions for various food items.
+                            </li>
+                            <li>For an input Dish image it generates a list of all ingredients pressent in the dish
+                                in percetage match
+                                found.
+                            </li>
+                            <li><b>Used - Python, Clarify API, Git</b>
+                            </li>
+                        </ul>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Project end -->
+            <!-- Hobby start -->
+            <div id="m-hobby" style="height:50px;"></div>
+            <div id="" style="margin-top: 4rem;">
+
+                <h1 class="text-white mb-4 display-3" style="color: var(--deeporange) !important">Hobbies
+                </h1>
+                <div class="container card shadow row mx-auto"
+                    style="padding: 2rem; border-radius: 1rem !important; border: 1px solid var(--deeporange) !important;">
+                    <div class=" m-1 p-2 par ">
+
+                        <div class="">
+                            <form onsubmit="javascript:mobileFormSubmit()" method="" action="">
+
+                                <div class="hobbydiv card"><img class="row" style="height:125px;width:125px;"
+                                        src="images_icons/tenor.gif" alt="">
+                                    <input class=" hobby-checkbox" type="checkbox" name="hobby" id="m-songs"
+                                        value="songs"> <label for="hobby_songs">Listening Songs</label>
+                                </div>
+                                <div class="hobbydiv card b"><img class="row" style="height:125px;width:125px;"
+                                        src="images_icons/fpsgames.gif" alt="">
+                                    <input class=" hobby-checkbox" type="checkbox" name="hobby" id="m-games"
+                                        value="games"> <label for="hobby_games">Playing FPS
+                                        Games</label>
+                                </div>
+                                <div class="hobbydiv card"><img class="row" style="height:125px;width:125px;"
+                                        src="images_icons/series.gif" alt="">
+                                    <input class=" hobby-checkbox" type="checkbox" name="hobby" id="m-series"
+                                        value="series"> <label for="hobby_series">Wathcing TV
+                                        Series</label>
+                                </div>
+
+                                <div class="mx-auto p-2 row">
+                                    <input type="submit" id="submit" name="submit" value="Submit"
+                                        class="mx-auto btn btn-primary"
+                                        style="background-color: var(--deeporange) !important; padding: 8px 32px !important;" />
+                                </div>
+                            </form>
+                        </div>
+
+
+                    </div>
+                    <hr>
+                    <p id="m-hobby-description"></p>
+                </div>
+            </div>
+
+            <!-- Hobby end -->
+            <!-- Education start -->
+            <div id="m-education" style="height:50px;"></div>
+            <div style="margin-top: 4rem;">
+                <h1 class="text-white mb-4 display-3" style="color: var(--deeporange) !important">Education
+                </h1>
+
+                <div class="container card shadow"
+                    style="padding: 2rem; border-radius: 1rem !important; border: 1px solid var(--deeporange) !important;">
+                    <div class="row mx-auto" style="overflow: hidden; max-width: 100%;">
+                        <table class="stylishtable" style="border-radius: 1rem !important;">
+                            <thead>
+                                <tr>
+                                    <th>Degree</th>
+                                    <th>Stream</th>
+                                    <th>School/University</th>
+                                    <th>Y.O.P</th>
+                                    <th>Percentage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="active-row">
+                                    <td>M.Tech</td>
+                                    <td>Computer Science</td>
+                                    <td>Indian Institute of Technology Bombay</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>B.Tech</td>
+                                    <td>Information Technology</td>
+                                    <td>R.G.P.V</td>
+                                    <td>2021</td>
+                                    <td>84.9</td>
+                                </tr>
+                                <tr class="active-row">
+                                    <td>12th</td>
+                                    <td>PCM</td>
+                                    <td>Hind Convent School</td>
+                                    <td>2017</td>
+                                    <td>89.8</td>
+                                </tr>
+                                <tr>
+                                    <td>10th</td>
+                                    <td>-</td>
+                                    <td>D.A.V Public School</td>
+                                    <td>2015</td>
+                                    <td>95</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education end -->
+            <!-- Register start -->
+            <div id="m-register" style="height:50px;"></div>
+
+            <div id="" style="margin-top: 4rem;">
+                <h1 class="text-white mb-4 display-3" style="color: var(--deeporange) !important">Register
+                </h1>
+
+                <div class="container card shadow"
+                    style="height:100vh;padding: 1rem; border-radius: 1rem !important; border: 1px solid var(--deeporange) !important; max-width: 100%; overflow: hidden;">
+                    <div>
+                        <div class="center">
+                            <embed type="text/html" class="mx-auto"
+                                src="https://docs.google.com/forms/d/e/1FAIpQLSeVZx6eKhT2ZLmgETPkPvGrtqt-YSR6avUGnRvAFMUq86wBEA/viewform?vc=0&c=0&w=1&flr=0"
+                                style="height:96vh;width:50vh;display: grid;place-items: center;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Register end -->
+
+            <!--Footer start-->
+            <div id="m-contact" class = "" style="margin-left:-3.5% !important; margin-right:-3.5% !important;margin-bottom: -3.5% !important;background: #003049 !important; margin-top: 4rem;">
+                <h1 class="text-white display-3"style="padding-left:3%;padding-top:3%;" >Contact
+                </h1>
+
+                <div class="rounded ">
+                    <div class="d-flex h-100">
+                        <a class="side-nav-btn flex-fill" target="_blank"
+                            href="https://www.linkedin.com/in/sachin-singh-lodhi">
+                            <div class="p-2">
+                                <i class="fa fa-linkedin-square text-white"
+                                    style="font-size:28px;margin-top:2rem !important;margin-bottom:2rem !important;" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                        <a class="side-nav-btn flex-fill" target="_blank"
+                            href="https://www.instagram.com/_sachin__singh_/">
+                            <div class="p-2">
+                                <i class="fa fa-instagram text-center text-white"
+                                    style="font-size:28px;margin-top:2rem !important;margin-bottom:2rem !important;" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                        <a class="side-nav-btn flex-fill" target="_blank"
+                            href="https://www.facebook.com/profile.php?id=100006128059377">
+                            <div class="p-2">
+                                <i class="fa fa-facebook-square text-white"
+                                    style="font-size:28px;margin-top:2rem !important;margin-bottom:2rem !important;" aria-hidden="true"></i>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <!--Footer end -->
+        </div>
+    </div>
+
+    <script src="other_files/script.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({ reset: true });
+        ScrollReveal().reveal('#home', { delay: 125 });
+        ScrollReveal().reveal('#project', { delay: 125 });
+        ScrollReveal().reveal('#hobby', { delay: 125 });
+        ScrollReveal().reveal('#education', { delay: 125 });
+        ScrollReveal().reveal('#register', { delay: 125 });
+
+        function openSideNavigation() {
+            document.querySelector('#side-nav').style.display = 'block';
+        }
+
+        function closeSideNavigation() {
+            document.querySelector('#side-nav').style.display = 'none';
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+/* body */
+
+.bottombtn {
+    font-size: 24px;
+    transition: transform 0.2s;
+    color: black;
+  }
+  
+  .bottombtn:hover {
+    text-decoration: none;
+    transform: scale(1.1);
+  }
+  
+  .bottombtn:hover {
+    background-color: var(--deeporange);
+    color: white;
+  }
+  
+  .stylishtable {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .stylishtable thead tr {
+    background-color: #023e8a;
+    color: #ffffff;
+    text-align: left;
+  }
+  
+  .stylishtable th,
+  .stylishtable td {
+      padding: 12px 15px;
+  }
+  
+  
+  .stylishtable tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .stylishtable tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  .stylishtable tbody tr:last-of-type {
+    border-bottom: 2px solid #023e8a;
+  }
+  
+  .stylishtable tbody tr.active-row {
+    font-weight: bold;
+    color: #023e8a;
+  }
+  
+  .mbtn:hover {
+    color: white !important;
+  }
